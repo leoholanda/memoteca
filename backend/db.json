@@ -1,0 +1,34 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que você chegou!",
+      "autoria": "Leonardo",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Angular é o melhor",
+      "autoria": "Dev Angular",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Eu prefiro Java no Backend",
+      "autoria": "Dev Java",
+      "modelo": "modelo2"
+    },
+    {
+      "conteudo": "Formulário reativo",
+      "autoria": "Angular",
+      "modelo": "modelo1",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "conteudo": "Que a força esteja com você",
+      "autoria": "Mestre Yoda",
+      "modelo": "modelo1"
+    }
+  ]
+}
