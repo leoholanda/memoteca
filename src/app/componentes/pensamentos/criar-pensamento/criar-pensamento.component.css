@@ -11,6 +11,12 @@
   width: 200px;
 }
 
+.botao__desabilitado {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
+}
+
 .criar-pensamentos {
   padding: 2rem 0;
 }
@@ -142,8 +148,3 @@ input[type='radio']:checked+.custom-radio span {
   margin-bottom: 20px;
 }
 
-.botao__desabilitado {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
-}

@@ -10,6 +10,8 @@ import { PensamentoService } from '../pensamento-service.service';
 export class ListarPensamentosComponent implements OnInit {
 
   listaPensamentos: Pensamento[] = [];
+  paginaAtual: number = 1;
+  temMaisPensamento: boolean = true;
 
   constructor(private service: PensamentoService) { }
 
@@ -18,9 +20,19 @@ export class ListarPensamentosComponent implements OnInit {
   }
 
   listarPensamentos() {
-    this.service.listar().subscribe((pensamentos) => {
+    this.service.listar(this.paginaAtual).subscribe((pensamentos) => {
       this.listaPensamentos = pensamentos;
     });
+  }
+
+  carregarMaisPensamentos() {
+    this.service.listar(++this.paginaAtual)
+      .subscribe(pensamentos => {
+        this.listaPensamentos.push(...pensamentos);
+        if(!pensamentos.length) {
+          this.temMaisPensamento = false;
+        }
+      })
   }
 
 }
